@@ -4,17 +4,31 @@ const slides = [
     kicker: "Learners' Space Astronomy",
     title: 'Exoplanet Detection',
     subtitle: 'How astronomers find worlds that are too far, too faint, and often completely hidden inside the glare of their stars.',
-    body: `<div class="cards"><div class="card"><h3>Format</h3><p>Page-wise presentation with keyboard, scroll and touch navigation.</p></div><div class="card"><h3>Goal</h3><p>Understand the physical signal behind each detection method, not just memorize method names.</p></div></div>`,
+    body: ``,
     notes: `Start by framing the central difficulty: exoplanets are not usually seen directly. Most are inferred from tiny effects on light, timing, position or brightness. Tell the audience that the presentation is organised like a detection mission: first define the target, then examine each instrument and signal.`
   },
   {
-    section: 'Opening', visual: 'compass', duration: 50,
-    kicker: 'Navigation', title: 'A website that behaves like slides',
-    subtitle: 'Use arrow keys, space, scroll wheel or swipe. Press O for the slide map, N for speaker notes and F for fullscreen.',
-    body: `<div class="callout">This is designed for a 55–65 minute talk: roughly one minute per page, with more time for the equations and method comparison sections.</div>`,
-    notes: `Tell the audience they can follow this as a website or as a live presentation. Explain that animations are not decorative only: the background changes to remind them which kind of signal is being discussed.`
+    section: 'Basics', visual: 'orbit', duration: 60,
+    kicker: 'Definition', title: 'What is an exoplanet?',
+    subtitle: 'An exoplanet, or extrasolar planet, is a planet outside our Solar System. A planet within the solar system is famously defined by the IAU as follows:',
+    body: `<ul><li>Must be in orbit around the Sun.</li><li>Has sufficient mass to achieve hydrostatic equilibrium (i.e., a round shape).</li><li>Has cleared the neighbourhood around its orbit.</li></ul><br>For exoplanets, we generally extend the first criterion to objects orbiting stars other than the Sun.`,
+    notes: `Do not spend too long debating formal definitions. The practical point for detection is: planets are faint companions. The observable is usually not the planet surface; it is the planet’s effect on the system. There are also free floating exoplanets / rogue planets, etc.`
   },
   {
+    section: 'Basics', visual: 'orbit', duration: 65,
+    kicker: 'Motivation', title: 'Why should we care?',
+    subtitle: 'Exoplanets test our theories of planet formation, habitability and whether Solar-System-like architectures are common.',
+    body: `<ul><li>They help us test and verify our assumptions about how planets form and migrate.</li><li>They let us compare rocky worlds, gas giants, hot Jupiters, super-Earths and mini-Neptunes.</li><li>They move the question “Are we alone?” from philosophy toward observation.</li></ul>`,
+    notes: `Exoplanet science changed astronomy quickly: before the 1990s, there were no confirmed planets around Sun-like stars. Now exoplanets are a normal part of astrophysics. Fermi famously asked whether we're alone in the universe- exoplanets are some of our foremost candidates for extraterrestrial life.`
+  },
+  {
+    section: 'Basics', visual: 'compass', duration: 60,
+    kicker: 'What we want to know', title: 'Detection is only the first step',
+    subtitle: 'A good detection method should ideally tell us more than “there is something there.”',
+    body: `<div class="cards"><div class="card"><h3>Orbit</h3><p>Period, semi-major axis, eccentricity and inclination.</p></div><div class="card"><h3>Bulk properties</h3><p>Radius, mass, density and rough composition.</p></div><div class="card"><h3>Atmosphere</h3><p>Spectra can indicate molecules, clouds, temperature and possible biosignature candidates.</p></div><div class="card"><h3>Habitability</h3><p>Distance from star, stellar radiation and atmospheric conditions matter together.</p></div></div>`,
+    notes: `This slide prepares the audience for why methods are complementary. Transit based detection can help us detect radius; radial velocity gives mass information; together they can give us something like the density of the planet (which tells us whether its rocky, a gas giant, etc.). Spectroscopy might tell us about its atmosphere.`
+  },
+    {
     section: 'Opening', visual: 'orbit', duration: 70,
     kicker: 'The big question', title: 'How do you find a planet you cannot see?',
     subtitle: 'A planet is small, dim and usually very close to a much brighter star on the sky.',
@@ -22,75 +36,56 @@ const slides = [
     notes: `Use a simple analogy: finding a planet beside a star is like finding a firefly next to a searchlight from kilometres away. The cleverness of exoplanet detection is that we often do not need to see the planet itself; we only need a reliable, repeatable fingerprint.`
   },
   {
-    section: 'Basics', visual: 'orbit', duration: 60,
-    kicker: 'Definition', title: 'What is an exoplanet?',
-    subtitle: 'An exoplanet, or extrasolar planet, is a planet outside our Solar System.',
-    body: `<div class="cards"><div class="card"><h3>Planet idea</h3><p>It orbits a star or stellar remnant, is round due to self-gravity, and is not itself a star.</p></div><div class="card"><h3>Why detection is subtle</h3><p>The object is usually unresolved, so the data arrives as light curves, spectra, positions or timing residuals.</p></div></div>`,
-    notes: `Do not spend too long debating formal definitions. The practical point for detection is: planets are faint companions. The observable is usually not the planet surface; it is the planet’s effect on the system.`
-  },
-  {
-    section: 'Basics', visual: 'orbit', duration: 65,
-    kicker: 'Motivation', title: 'Why should we care?',
-    subtitle: 'Exoplanets test our theories of planet formation, habitability and whether Solar-System-like architectures are common.',
-    body: `<ul><li>They challenge our assumptions about how planets form and migrate.</li><li>They let us compare rocky worlds, gas giants, hot Jupiters, super-Earths and mini-Neptunes.</li><li>They move the question “Are we alone?” from philosophy toward observation.</li></ul>`,
-    notes: `Emphasise that exoplanet science changed astronomy quickly: before the 1990s, there were no confirmed planets around Sun-like stars. Now exoplanets are a normal part of astrophysics.`
-  },
-  {
-    section: 'Basics', visual: 'compass', duration: 60,
-    kicker: 'What we want to know', title: 'Detection is only the first step',
-    subtitle: 'A good detection method should ideally tell us more than “there is something there.”',
-    body: `<div class="cards"><div class="card"><h3>Orbit</h3><p>Period, semi-major axis, eccentricity and inclination.</p></div><div class="card"><h3>Bulk properties</h3><p>Radius, mass, density and rough composition.</p></div><div class="card"><h3>Atmosphere</h3><p>Spectra can indicate molecules, clouds, temperature and possible biosignature candidates.</p></div><div class="card"><h3>Habitability</h3><p>Distance from star, stellar radiation and atmospheric conditions matter together.</p></div></div>`,
-    notes: `This slide prepares the audience for why methods are complementary. A transit gives radius well; radial velocity gives mass information; together they can give density. Spectroscopy adds atmospheric clues.`
-  },
-  {
     section: 'History', visual: 'pulsar', duration: 70,
-    kicker: 'A surprising beginning', title: 'The first confirmed exoplanets were around a pulsar',
+    kicker: 'A surprising beginning', title: 'First confirmed exoplanets',
     subtitle: 'The first confirmed exoplanets were not around a Sun-like star, but around PSR B1257+12, a rapidly rotating neutron star.',
-    body: `<div class="timeline"><div class="timeline-row"><span class="timeline-year">1992</span><span class="timeline-text">Wolszczan and Frail confirmed planets through pulsar timing variations.</span></div><div class="timeline-row"><span class="timeline-year">Signal</span><span class="timeline-text">The pulsar’s extremely regular pulses arrived slightly early or late because the pulsar moved around the system barycentre.</span></div></div>`,
+    body: `<div class="timeline"><div class="timeline-row"><span class="timeline-year">1992</span><span class="timeline-text">Wolszczan and Frail confirmed planets through pulsar timing variations.</span></div><div class="timeline-row"><span class="timeline-year">Signal</span><span class="timeline-text">The pulsar’s extremely regular pulses arrived slightly early or late because the pulsar moved around the system barycentre. Interestingly, we now know that these kinds of exoplanets are actually very rare. Only 8 out of 6000+ exoplanets we know of today were discovered using pulsar timings.</span></div></div>`,
     notes: `This is a good story slide. The first confirmed worlds were found through precision timing, not through images. Pulsars act like cosmic clocks. If the clock is moving because of a companion, the pulse arrival times shift.`
   },
   {
     section: 'History', visual: 'rv', duration: 70,
-    kicker: 'The Sun-like star breakthrough', title: '51 Pegasi b changed the field',
-    subtitle: 'In 1995, Michel Mayor and Didier Queloz found a hot Jupiter orbiting a Sun-like star with a period of about 4.2 days.',
-    body: `<div class="callout">This was shocking because the giant planet was very close to its star — unlike Jupiter in our Solar System.</div><ul><li>Method: radial velocity.</li><li>Host: 51 Pegasi, a Sun-like main-sequence star.</li><li>Lesson: other planetary systems can look very different from ours.</li></ul>`,
+    kicker: 'Some background on where exoplanets are found', title: 'Where Exoplanets are Found',
+    subtitle: '',
+    body: `Star systems can be wildly different from the solar system. For instance, about 3 years after the first exoplanet was discovered, astronomers came across 51 Pegasi. This is a star very similar to our own sun. Using certain techniques, they detected a massive gas giant orbiting very close to the star (with an orbital period of only 4.2 days). This was a type of exoplanet known as a "Hot Jupiter"- which had previously only been theorized. With only our own solar system to go off of, this discovery was considered very surprising at the time. In general, most of the 6000 exoplanets we have discovered so far have been around F, G, and K-type stars (similar to or slightly different from our Sun). These stars are common, stable, and live long anough to make planet detection easier. Smaller stars have planets hard to detect with common methods, while hot and massive stars show much weaker observable effects from their planets. Astronomers naturally focused on the more accessible stars because expensive planet-hunting missions will obviously aim for the best chance of success.`,
     notes: `Explain why this discovery was weird: a Jupiter-mass planet so close to its star was not what the Solar System had trained astronomers to expect. This pushed planet migration and formation theories forward.`
   },
   {
     section: 'History', visual: 'orbit', duration: 55,
-    kicker: 'A bias warning', title: 'Discovered systems are not random systems',
+    kicker: 'A bias warning', title: 'Selection Bias',
     subtitle: 'The planets we find first are often the planets that produce the strongest signals.',
     body: `<ul><li>Close-in giant planets are easier for radial velocity and transits.</li><li>Wide, young, warm giants are easier for direct imaging.</li><li>Microlensing can detect distant and faint systems, but events are usually non-repeatable.</li></ul>`,
     notes: `Introduce selection bias. Our catalogue of exoplanets is shaped by what our methods can detect. The universe is not necessarily full only of hot Jupiters; they were simply easier to find early.`
   },
   {
     section: 'Basics', visual: 'compass', duration: 60,
-    kicker: 'The method menu', title: 'Seven major ways to detect exoplanets',
-    subtitle: 'This presentation focuses on the six most common conceptual families.',
-    body: `<div class="cards"><div class="card"><h3>Timing</h3><p>Pulsar timing and related clocks.</p></div><div class="card"><h3>Brightness</h3><p>Transits and orbital brightness variations.</p></div><div class="card"><h3>Motion</h3><p>Radial velocity and astrometry.</p></div><div class="card"><h3>Images / lensing</h3><p>Direct imaging and gravitational microlensing.</p></div></div>`,
+    kicker: 'The methods', title: 'Seven major ways to detect exoplanets',
+    subtitle: '',
+    body: `There are seven major ways to detect exoplanets. These are as follows. <ul><li>Pulsar Timing</li><li>Direct Imaging</li><li>Gravitational Microlensing</li><li>Astrometry</li><li>Transits</li><li>Radial Velocity Method</li><li>Orbital Brightness Variation</li></ul> Remember that the multiple methods can often be used to confirm the existence of exoplanets. For instance, we often use the radial velocity method to confirm potential candidates.`,
     notes: `This slide gives the full map. Point out that the same physical cause — gravity between star and planet — can appear in many different observables.`
   },
   {
-    section: 'Basics', visual: 'compass', duration: 55,
-    kicker: 'Core idea', title: 'Every method has an observable',
-    subtitle: 'Ask: which quantity is being measured, and how does a planet change it?',
-    body: `<div class="table-wrap"><table><tr><th>Method</th><th>Observable</th><th>Planet signature</th></tr><tr><td>Transit</td><td>Brightness vs time</td><td>Periodic dip</td></tr><tr><td>Radial velocity</td><td>Stellar spectrum</td><td>Periodic Doppler shift</td></tr><tr><td>Astrometry</td><td>Sky position</td><td>Tiny wobble</td></tr><tr><td>Pulsar timing</td><td>Pulse arrival time</td><td>Timing residuals</td></tr><tr><td>Microlensing</td><td>Brightness of background source</td><td>Short anomaly</td></tr><tr><td>Direct imaging</td><td>Image contrast</td><td>Faint point source near star</td></tr></table></div>`,
-    notes: `This is the key organising slide. Return to it later if the audience gets lost. The observable column prevents the methods from becoming abstract labels.`
-  },
-  {
     section: 'Pulsar Timing', visual: 'pulsar', duration: 55,
-    kicker: 'Method 1', title: 'Pulsar timing',
-    subtitle: 'Use a pulsar as an ultra-stable clock and look for systematic deviations in pulse arrival times.',
-    body: `<ul><li>Millisecond pulsars can be timed with extreme precision.</li><li>If a planet makes the pulsar orbit the barycentre, the light travel distance changes.</li><li>That creates early/late arrival times called timing residuals.</li></ul>`,
+    kicker: 'Method 1', title: 'Timing variations',
+    subtitle: '',
+    body: `Orbiting planets lead to oscillations of the host star about the barycenter of the system. In certain cases where the host star gives us some sort of periodic signal, this gives us a way to detect exoplanets by variations in the measured time period of that signal (due to change in distance over the star's orbit). We will be taking millisecond pulsars as an example. Basically, <ul><li>Millisecond pulsars can be timed with extreme precision.</li><li>If a planet makes the pulsar orbit the barycentre, the light travel distance changes.</li><li>That creates early/late arrival times called timing residuals.</li></ul>`,
     notes: `Start the method section. Say: imagine a lighthouse rotating with incredible regularity. If the lighthouse itself moves back and forth, flashes reach us earlier or later.`
   },
-  {
+{
     section: 'Pulsar Timing', visual: 'pulsar', duration: 70,
-    kicker: 'Signal origin', title: 'The barycentre creates a clock delay',
-    subtitle: 'The pulsar does not stay fixed. It orbits the common centre of mass with its planets.',
-    body: `<div class="equation">τp = (1 / c) · [a sin(i) Mp / (M★ + Mp)] ≈ (1 / c) · [a sin(i) Mp / M★]</div><ul><li>τp is the timing residual amplitude.</li><li>a is the planet’s semi-major axis.</li><li>i is inclination; only the line-of-sight component matters.</li></ul>`,
+    kicker: 'Signal origin', title: 'Equation governing these residuals',
+    subtitle: 'Using the equation of an ellipse and assuming the signal travels to us at the speed of light c (also assuming that the inclination of the orbital plane of the system is i), we get the following expression:',
+    body: `<div class="equation-container">
+        <div class="equation">
+            $$\\tau_p = \\frac{1}{c} \\cdot \\left[ \\frac{a \\sin(i) M_p}{M_\\star + M_p} \\right] \\approx \\frac{1}{c} \\cdot \\left[ \\frac{a \\sin(i) M_p}{M_\\star} \\right]$$
+        </div>
+        <ul class="equation-legend">
+            <li><strong>$\\tau_p$</strong> is the timing residual amplitude.</li>
+            <li><strong>$a$</strong> is the planet’s semi-major axis.</li>
+            <li><strong>$i$</strong> is inclination (only the line-of-sight component matters).</li>
+        </ul>
+    </div>`,
     notes: `Walk through the equation slowly. The factor 1/c converts a distance difference into a time difference. The sin(i) term tells us that face-on motion produces little line-of-sight delay.`
-  },
+},
   {
     section: 'Pulsar Timing', visual: 'pulsar', duration: 70,
     kicker: 'Data reality', title: 'Residuals are not automatically planets',
