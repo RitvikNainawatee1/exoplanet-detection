@@ -468,7 +468,9 @@ function render() {
         <p class="subtitle">${slide.subtitle}</p>
         <div class="body">${slide.body || ''}</div>
       </div>
-      <div class="visual-card" aria-hidden="true"><div class="visual-inner">${visualMarkup(slide.visual)}</div><span class="slide-number">${pad(i + 1)} / ${pad(slides.length)}</span></div>
+      <div class="visual-card" aria-hidden="true"><div class="visual-inner">${slide.image
+  ? `<img class="slide-photo" src="${slide.image}" alt="">`
+  : visualMarkup(slide.visual)}</div><span class="slide-number">${pad(i + 1)} / ${pad(slides.length)}</span></div>
     </section>
   `).join('');
 
