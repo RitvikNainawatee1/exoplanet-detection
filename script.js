@@ -461,19 +461,29 @@ function visualMarkup(type) {
 }
 
 function render() {
-  deck.innerHTML = slides.map((slide, i) => `
-    <section class="slide" data-index="${i}" data-section="${slide.section}">
-      <div class="slide-content">
-        <p class="eyebrow">${slide.kicker || slide.section}</p>
-        ${i === 0 ? `<h1>${slide.title}</h1>` : `<h2>${slide.title}</h2>`}
-        <p class="subtitle">${slide.subtitle}</p>
-        <div class="body">${slide.body || ''}</div>
+deck.innerHTML = slides.map((slide, i) => `
+  <section class="slide" data-index="${i}" data-section="${slide.section}">
+    <div class="slide-content">
+      <p class="eyebrow">${slide.kicker || slide.section}</p>
+      ${i === 0 ? `<h1>${slide.title}</h1>` : `<h2>${slide.title}</h2>`}
+      <p class="subtitle">${slide.subtitle}</p>
+      <div class="body">${slide.body || ''}</div>
+    </div>
+
+    <div class="visual-card" aria-hidden="true">
+      <div class="visual-inner">
+        ${
+          slide.image
+            ? `<img class="slide-photo" src="${slide.image}" alt="">`
+            : visualMarkup(slide.visual)
+        }
       </div>
-      <div class="visual-card" aria-hidden="true"><div class="visual-inner">${slide.image
-  ? `<img class="slide-photo" src="${slide.image}" alt="">`
-  : visualMarkup(slide.visual)}</div><span class="slide-number">${pad(i + 1)} / ${pad(slides.length)}</span></div>
-    </section>
-  `).join('');
+      <span class="slide-number">
+        ${pad(i + 1)} / ${pad(slides.length)}
+      </span>
+    </div>
+  </section>
+`).join('');
 
   chapterRail.innerHTML = chapters.map((ch, i) => {
     const firstIndex = slides.findIndex(s => s.section === ch);
