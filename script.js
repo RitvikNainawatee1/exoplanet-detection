@@ -22,7 +22,7 @@ const slides = [
     notes: `Exoplanet science changed astronomy quickly: before the 1990s, there were no confirmed planets around Sun-like stars. Now exoplanets are a normal part of astrophysics. Fermi famously asked whether we're alone in the universe- exoplanets are some of our foremost candidates for extraterrestrial life.`
   },
   {
-    section: 'Basics', visual: 'compass', duration: 60,
+    section: 'Basics', visual: '', duration: 60,
     kicker: 'What we want to know', title: 'Detection is only the first step',
     subtitle: 'A good detection method should ideally tell us more than “there is something there.”',
     body: `<div class="cards"><div class="card"><h3>Orbit</h3><p>Period, semi-major axis, eccentricity and inclination.</p></div><div class="card"><h3>Bulk properties</h3><p>Radius, mass, density and rough composition.</p></div><div class="card"><h3>Atmosphere</h3><p>Spectra can indicate molecules, clouds, temperature and possible biosignature candidates.</p></div><div class="card"><h3>Habitability</h3><p>Distance from star, stellar radiation and atmospheric conditions matter together.</p></div></div>`,
