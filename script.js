@@ -33,6 +33,7 @@ const slides = [
     {
     section: 'Opening', visual: 'orbit', duration: 70,
     kicker: 'The big question', title: 'How do you find a planet you cannot see?',
+    image: `DH_Tauri.jpg`,
     subtitle: 'A planet is small, dim and usually very close to a much brighter star on the sky.',
     body: `<ul><li>In most systems, the star dominates the image.</li><li>The planet may reveal itself through a dip, wobble, timing delay, magnification event or direct point-source detection.</li><li>Every method is a different way of asking: what changed because a planet is there?</li></ul>`,
     notes: `Use a simple analogy: finding a planet beside a star is like finding a firefly next to a searchlight from kilometres away. The cleverness of exoplanet detection is that we often do not need to see the planet itself; we only need a reliable, repeatable fingerprint.`
