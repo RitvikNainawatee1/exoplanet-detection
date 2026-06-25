@@ -53,7 +53,7 @@ const slides = [
     section: 'History', visual: 'orbit', duration: 55,
     kicker: 'A bias warning', title: 'Selection Bias',
     subtitle: 'The planets we find first are often the planets that produce the strongest signals.',
-    body: `<ul><li>Close-in giant planets are easier for radial velocity and transits.</li><li>Wide, young, warm giants are easier for direct imaging.</li><li>Microlensing can detect distant and faint systems, but events are usually non-repeatable.</li></ul>`,
+    body: `<ul><li>Close-in giant Jupiter-like planets are easier for radial velocity and transits.</li><li>Young (and ideally hot) giants are easier for direct imaging.</li><li>Microlensing can detect very distance / faint systems, but the events are non-repeatable.</li></ul>`,
     notes: `Introduce selection bias. Our catalogue of exoplanets is shaped by what our methods can detect. The universe is not necessarily full only of hot Jupiters; they were simply easier to find early.`
   },
   {
@@ -185,7 +185,8 @@ const slides = [
     section: 'Microlensing', visual: 'lens', duration: 60,
     kicker: 'Strengths', title: 'Strengths',
     subtitle: 'It is sensitive to faint hosts, distant systems and planets at several AU.',
-    body: `<ul><li><Rogue and dark planets can be spotted.</li> 
+    body: `<ul>
+    <li>Rogue and dark planets can be spotted.</li> 
     <li>Very low mass planets down to the mass of the earth can be spotted as well (since even these low masses can have observable effects on brightness due to the nature of lensing) </li>
     </ul>`,
     notes: `Explain that microlensing is powerful for demographics, especially beyond the snow line. It is less dependent on the planet-star brightness contrast. Provided planet is beyond a certain threshold, the effect produced by it during lensing is nearly constant.`
