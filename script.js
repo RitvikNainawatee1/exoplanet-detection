@@ -114,7 +114,7 @@ const slides = [
     section: 'Direct Imaging', visual: 'imaging', duration: 70,
     kicker: '', title: 'Difficulties',
     subtitle: '',
-    body: `What we see from the earth is the apparent magnitude of astronomical bodies, and as such what matters is the relative brightness of the planet and the star. $$\frac{f_p(\alpha, \lambda)}{f_*(\lambda)} = p(\lambda)\times (\frac{R_p}{a})^2 \times g(\alpha)$$ <ul><li>p(λ): geometric albedo.</li><li>Rp/a: planet size compared with orbital distance.</li><li>g(α): phase function depending on current phase.</li></ul><br>The specific form of the phase function depends on the scattering and reflective properties of the planet’s atmosphere or surface. It describes how the reflected light from the planet varies with different phase angles.`,
+    body: `What we see from the earth is the apparent magnitude of astronomical bodies, and as such what matters is the relative brightness of the planet and the star. $$\\frac{f_p(\\alpha, \\lambda)}{f_*(\\lambda)} = p(\\lambda)\\times (\\frac{R_p}{a})^2 \\times g(\\alpha)$$ <ul><li>$p(\\lambda)$: geometric albedo.</li><li>$\\frac{R_p}{a}$: planet size compared with orbital distance.</li><li>$g(\\alpha)$: phase function depending on current phase.</li></ul><br>The specific form of the phase function depends on the scattering and reflective properties of the planet’s atmosphere or surface. It describes how the reflected light from the planet varies with different phase angles.`,
     notes: `Explain each term qualitatively. Bigger/brighter planets are easier. Planets far from the star are easier to separate angularly but may be dimmer and cooler.`
   },
   {
