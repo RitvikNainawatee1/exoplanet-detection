@@ -456,7 +456,17 @@ function visualMarkup(type) {
     case 'astrometry': return `<div class="astrometry-visual"><span class="wobble-trace"></span><span class="sky-star"></span></div>`;
     case 'imaging': return `<div class="imaging-visual"><span class="glare"></span><span class="coronagraph"></span><span class="faint-planet"></span></div>`;
     case 'neural': return `<div class="neural-visual"><svg class="neural-svg" viewBox="0 0 360 330"><line x1="53" y1="40" x2="162" y2="106"/><line x1="65" y1="191" x2="162" y2="106"/><line x1="162" y1="106" x2="245" y2="46"/><line x1="162" y1="106" x2="274" y2="218"/><line x1="153" y1="257" x2="274" y2="218"/><line x1="65" y1="191" x2="153" y2="257"/><line x1="245" y1="46" x2="274" y2="218"/></svg><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span></div>`;
-    case 'compass': return `<div class="method-compass"><div class="method-node">Transit<small>dip</small></div><div class="method-node">RV<small>Doppler</small></div><div class="method-node">Imaging<small>contrast</small></div><div class="method-node">Lensing<small>magnify</small></div><div class="method-node">Timing<small>clock</small></div><div class="method-node">Planet<small>signal</small></div></div>`;
+    case 'compass': return 
+      `<div class="method-compass">
+        <div class="method-node">Transit</div>
+        <div class="method-node">RV</div>
+        <div class="method-node">Imaging</div>
+        <div class="method-node">Lensing</div>
+        <div class="method-node">Timing</div>
+        <div class="method-node">Astrometry</div>
+        <div class="method-node">Orbital Brightness</div>
+        <div class="method-node">Planet<small>Signal</small></div>
+        </div>`;
     case 'final': return `<div class="final-visual"><div class="final-step"><b>Question</b><span>why?</span></div><div class="final-step"><b>Observable</b><span>what?</span></div><div class="final-step"><b>Model</b><span>how?</span></div><div class="final-step"><b>Planet</b><span>found</span></div></div>`;
     case 'orbit':
     default: return `<div class="orbit-visual"><span class="orbit-ring"></span><span class="orbit-ring r2"></span><span class="star-core"></span><span class="planet-dot"></span><span class="planet-dot p2"></span></div>`;
