@@ -5,7 +5,7 @@ const slides = [
     title: 'Exoplanet Detection',
     subtitle: 'How astronomers find worlds that are too far, too faint, and often completely hidden inside the glare of their stars.',
     body: ``,
-    image: `images/Exoplanet.jpeg`
+    image: `images/Exoplanet.jpeg`,
     notes: `Start by framing the central difficulty: exoplanets are not usually seen directly. Most are inferred from tiny effects on light, timing, position or brightness. Tell the audience that the presentation is organised like a detection mission: first define the target, then examine each instrument and signal.`
   },
   {
