@@ -167,7 +167,7 @@ const slides = [
     section: 'Microlensing', visual: 'lens', duration: 60,
     kicker: 'Lensing geometry', title: 'Lens bends light due to relativistic effects',
     subtitle: 'Perfect alignment would produce an Einstein ring; near alignment produces multiple unresolved images and magnification.',
-    body: `<div class="equation">$θ_E \\propto \\sqrt{M} \\times \\sqrt(\\frac{D_{LS}}{D_L\\times D_S})$</div><ul><li>$θ_E$ can be used to set the angular scale of the lensing event.</li><li>The observed images are usually not resolved.</li><li>We detect the changing brightness instead.</li></ul>`,
+    body: `<div class="equation">$θ_E \\propto \\sqrt{M} \\times \\sqrt{\\frac{D_{LS}}{D_L\\times D_S}}$</div><ul><li>$θ_E$ can be used to set the angular scale of the lensing event.</li><li>The observed images are usually not resolved.</li><li>We detect the changing brightness instead.</li></ul>`,
     notes: `Keep the equation qualitative. The important idea is that the event has a characteristic scale related to the lens mass and distances. The telescope usually sees only a brighter source, not separated images.`
   },
   {
