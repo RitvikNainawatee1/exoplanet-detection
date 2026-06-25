@@ -128,7 +128,7 @@ const slides = [
     section: 'Direct Imaging', visual: 'imaging', duration: 70,
     kicker: 'Resolution', title: 'Large apertures help separate close objects',
     subtitle: 'Resolving power improves with telescope diameter and shorter wavelength.',
-    body: `<div class="equation">θmin ≈ 1.22 λ / D</div><ul><li>θmin is the smallest angular separation resolvable.</li><li>λ is the observing wavelength.</li><li>D is telescope aperture diameter.</li></ul>`,
+    body: `<div class="equation">$θ_{min} ≈ 1.22 \\frac {λ}{D}$</div><ul><li>θmin is the smallest angular separation resolvable.</li><li>λ is the observing wavelength.</li><li>D is telescope aperture diameter.</li></ul>`,
     notes: `Connect this with Rayleigh criterion. Larger telescopes produce narrower diffraction patterns. But bigger telescopes alone do not solve contrast; they also need wavefront control and post-processing.`
   },
   {
@@ -167,7 +167,7 @@ const slides = [
     section: 'Microlensing', visual: 'lens', duration: 60,
     kicker: 'Lensing geometry', title: 'Lens bends light due to relativistic effects',
     subtitle: 'Perfect alignment would produce an Einstein ring; near alignment produces multiple unresolved images and magnification.',
-    body: `<div class="equation">θE ∝ √M · √[(DLS) / (DL DS)]</div><ul><li>θE can be used to set the angular scale of the lensing event.</li><li>The observed images are usually not resolved.</li><li>We detect the changing brightness instead.</li></ul>`,
+    body: `<div class="equation">$θ_E \\propto \\sqrt{M} \\times \\sqrt(\\frac{D_{LS}}{D_L\\times D_S})$</div><ul><li>$θ_E$ can be used to set the angular scale of the lensing event.</li><li>The observed images are usually not resolved.</li><li>We detect the changing brightness instead.</li></ul>`,
     notes: `Keep the equation qualitative. The important idea is that the event has a characteristic scale related to the lens mass and distances. The telescope usually sees only a brighter source, not separated images.`
   },
   {
@@ -205,7 +205,7 @@ const slides = [
     section: 'Astrometry', visual: 'astrometry', duration: 70,
     kicker: 'Angular signal', title: 'Measurement difficulties',
     subtitle: 'For distant systems, the actual magnitude of the wobble is very small.',
-    body: `Astrometry was in fact the first method used by astronomers to try and detect planets in the 19th century. However, the tools they possessed at the time were just not sophisticated enough to permit reliable measurements. The angular amplitude of the wobble is roughly given by this equation: <div class="equation">α ≈ (Mp / M★) · (a / d)</div><ul><li>α: angular size of stellar wobble.</li><li>Mp/M★: planet-to-star mass ratio.</li><li>a: orbital size; d: distance to system.</li></ul>`,
+    body: `Astrometry was in fact the first method used by astronomers to try and detect planets in the 19th century. However, the tools they possessed at the time were just not sophisticated enough to permit reliable measurements. The angular amplitude of the wobble is roughly given by this equation: <div class="equation">$\\alpha \\approx \\frac{M_p}{M_*} \\times \\frac{a}{d}$</div><ul><li>$\\alpha$: angular size of stellar wobble.</li><li>$\\frac{M_p}{M_*}$: planet-to-star mass ratio.</li><li>$a$: orbital size; $d$: distance to system.</li></ul>`,
     notes: `Explain the scaling. A massive planet pulls the star more. A wider orbit gives a bigger barycentric motion. A nearby system makes the same physical motion subtend a larger angle.`
   },
   {
