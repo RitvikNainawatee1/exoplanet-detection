@@ -10,7 +10,7 @@ const slides = [
   {
     section: 'Basics', visual: 'orbit', duration: 60,
     kicker: 'Definition', title: 'What is an exoplanet?',
-    subtitle: 'An exoplanet, or extrasolar planet, $a_b$ is a planet outside our Solar System. A planet within the solar system is famously defined by the IAU as follows:',
+    subtitle: 'An exoplanet, or extrasolar planet, is a planet outside our Solar System. A planet within the solar system is famously defined by the IAU as follows:',
     body: `<ul><li>Must be in orbit around the Sun.</li><li>Has sufficient mass to achieve hydrostatic equilibrium (i.e., a round shape).</li><li>Has cleared the neighbourhood around its orbit.</li></ul><br>For exoplanets, we generally extend the first criterion to objects orbiting stars other than the Sun.`,
     notes: `Do not spend too long debating formal definitions. The practical point for detection is: planets are faint companions. The observable is usually not the planet surface; it is the planet’s effect on the system. There are also free floating exoplanets / rogue planets, etc.`
   },
@@ -74,16 +74,12 @@ const slides = [
     section: 'Pulsar Timing', visual: 'pulsar', duration: 70,
     kicker: 'Signal origin', title: 'Equation governing these residuals',
     subtitle: 'Using the equation of an ellipse and assuming the signal travels to us at the speed of light c (also assuming that the inclination of the orbital plane of the system is i), we get the following expression:',
-    body: `<div class="equation-container">
-        <div class="equation">
-            $$\\tau_p = \\frac{1}{c} \\cdot \\left[ \\frac{a \\sin(i) M_p}{M_\\star + M_p} \\right] \\approx \\frac{1}{c} \\cdot \\left[ \\frac{a \\sin(i) M_p}{M_\\star} \\right]$$
-        </div>
-        <ul class="equation-legend">
+    body: `$$\\tau_p = \\frac{1}{c} \\cdot \\left[ \\frac{a \\sin(i) M_p}{M_\\star + M_p} \\right] \\approx \\frac{1}{c} \\cdot \\left[ \\frac{a \\sin(i) M_p}{M_\\star} \\right]$$
+        <ul>
             <li><strong>$\\tau_p$</strong> is the timing residual amplitude.</li>
             <li><strong>$a$</strong> is the planet’s semi-major axis.</li>
             <li><strong>$i$</strong> is inclination (only the line-of-sight component matters).</li>
-        </ul>
-    </div>`,
+        </ul>`,
     notes: `Walk through the equation slowly. The factor 1/c converts a distance difference into a time difference. The sin(i) term tells us that face-on motion produces little line-of-sight delay.`
 },
   {
@@ -118,7 +114,7 @@ const slides = [
     section: 'Direct Imaging', visual: 'imaging', duration: 70,
     kicker: '', title: 'Difficulties',
     subtitle: '',
-    body: `What we see from the earth is the apparent magnitude of astronomical bodies, and as such what matters is the relative brightness of the planet and the star. <div class="equation">fp(α, λ) / f★(λ) = p(λ) · (Rp / a)² · g(α)</div><ul><li>p(λ): geometric albedo.</li><li>Rp/a: planet size compared with orbital distance.</li><li>g(α): phase function depending on current phase.</li></ul><br>The specific form of the phase function depends on the scattering and reflective properties of the planet’s atmosphere or surface. It describes how the reflected light from the planet varies with different phase angles.`,
+    body: `What we see from the earth is the apparent magnitude of astronomical bodies, and as such what matters is the relative brightness of the planet and the star. $$\frac{f_p(\alpha, \lambda)}{f_*(\lambda)} = p(\lambda)\times (\frac{R_p}{a})^2 \times g(\alpha)$$ <ul><li>p(λ): geometric albedo.</li><li>Rp/a: planet size compared with orbital distance.</li><li>g(α): phase function depending on current phase.</li></ul><br>The specific form of the phase function depends on the scattering and reflective properties of the planet’s atmosphere or surface. It describes how the reflected light from the planet varies with different phase angles.`,
     notes: `Explain each term qualitatively. Bigger/brighter planets are easier. Planets far from the star are easier to separate angularly but may be dimmer and cooler.`
   },
   {
