@@ -33,7 +33,7 @@ const slides = [
     {
     section: 'Opening', visual: 'orbit', duration: 70,
     kicker: 'The big question', title: 'How do you find a planet you cannot see?',
-    image: `DH_Tauri.jpg`,
+    image: `images/DH_Tauri.jpg`,
     subtitle: 'A planet is small, dim and usually very close to a much brighter star on the sky.',
     body: `<ul><li>In most systems, the star dominates the image.</li><li>The planet may reveal itself through a dip, wobble, timing delay, magnification event or direct point-source detection.</li><li>Every method is a different way of asking: what changed because a planet is there?</li></ul>`,
     notes: `Use a simple analogy: finding a planet beside a star is like finding a firefly next to a searchlight from kilometres away. The cleverness of exoplanet detection is that we often do not need to see the planet itself; we only need a reliable, repeatable fingerprint.`
@@ -41,6 +41,7 @@ const slides = [
   {
     section: 'History', visual: 'pulsar', duration: 70,
     kicker: 'A surprising beginning', title: 'First confirmed exoplanets',
+    image: 'images/PSR_B1257.jpg',
     subtitle: 'The first confirmed exoplanets were not around a Sun-like star, but around PSR B1257+12, a rapidly rotating neutron star.',
     body: `<div class="timeline"><div class="timeline-row"><span class="timeline-year">1992</span><span class="timeline-text">Wolszczan and Frail confirmed planets through pulsar timing variations.</span></div><div class="timeline-row"><span class="timeline-year">Signal</span><span class="timeline-text">The pulsar’s extremely regular pulses arrived slightly early or late because the pulsar moved around the system barycentre. Interestingly, we now know that these kinds of exoplanets are actually very rare. Only 8 out of 6000+ exoplanets we know of today were discovered using pulsar timings.</span></div></div>`,
     notes: `This is a good story slide. The first confirmed worlds were found through precision timing, not through images. Pulsars act like cosmic clocks. If the clock is moving because of a companion, the pulse arrival times shift.`
