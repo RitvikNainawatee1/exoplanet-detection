@@ -456,8 +456,7 @@ function visualMarkup(type) {
     case 'astrometry': return `<div class="astrometry-visual"><span class="wobble-trace"></span><span class="sky-star"></span></div>`;
     case 'imaging': return `<div class="imaging-visual"><span class="glare"></span><span class="coronagraph"></span><span class="faint-planet"></span></div>`;
     case 'neural': return `<div class="neural-visual"><svg class="neural-svg" viewBox="0 0 360 330"><line x1="53" y1="40" x2="162" y2="106"/><line x1="65" y1="191" x2="162" y2="106"/><line x1="162" y1="106" x2="245" y2="46"/><line x1="162" y1="106" x2="274" y2="218"/><line x1="153" y1="257" x2="274" y2="218"/><line x1="65" y1="191" x2="153" y2="257"/><line x1="245" y1="46" x2="274" y2="218"/></svg><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span><span class="neural-node"></span></div>`;
-    case 'compass': return 
-      `<div class="method-compass">
+    case 'compass': return `<div class="method-compass">
         <div class="method-node">Transit</div>
         <div class="method-node">RV</div>
         <div class="method-node">Imaging</div>
