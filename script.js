@@ -10,7 +10,7 @@ const slides = [
   {
     section: 'Basics', visual: 'orbit', duration: 60,
     kicker: 'Definition', title: 'What is an exoplanet?',
-    subtitle: 'An exoplanet, or extrasolar planet, is a planet outside our Solar System. A planet within the solar system is famously defined by the IAU as follows:',
+    subtitle: 'An exoplanet, or extrasolar planet, $a_b$ is a planet outside our Solar System. A planet within the solar system is famously defined by the IAU as follows:',
     body: `<ul><li>Must be in orbit around the Sun.</li><li>Has sufficient mass to achieve hydrostatic equilibrium (i.e., a round shape).</li><li>Has cleared the neighbourhood around its orbit.</li></ul><br>For exoplanets, we generally extend the first criterion to objects orbiting stars other than the Sun.`,
     notes: `Do not spend too long debating formal definitions. The practical point for detection is: planets are faint companions. The observable is usually not the planet surface; it is the planet’s effect on the system. There are also free floating exoplanets / rogue planets, etc.`
   },
@@ -488,6 +488,9 @@ function render() {
     closeMap();
   }));
   update();
+  if (window.MathJax) {
+    MathJax.typesetPromise();
+  }
 }
 
 function update() {
