@@ -64,6 +64,7 @@ const slides = [
     section: 'Basics', visual: 'compass', duration: 60,
     kicker: 'The methods', title: 'Seven major ways to detect exoplanets',
     subtitle: '',
+    image: 'images/exoplanetsDiscoveryMethods.png',
     body: `There are seven major ways to detect exoplanets. These are as follows. <ul><li>Pulsar Timing</li><li>Direct Imaging</li><li>Gravitational Microlensing</li><li>Astrometry</li><li>Transits</li><li>Radial Velocity Method</li><li>Orbital Brightness Variation</li></ul> Remember that the multiple methods can often be used to confirm the existence of exoplanets. For instance, we often use the radial velocity method to confirm potential candidates.`,
     notes: `This slide gives the full map. Point out that the same physical cause — gravity between star and planet — can appear in many different observables.`
   },
@@ -71,6 +72,7 @@ const slides = [
     section: 'Pulsar Timing', visual: 'pulsar', duration: 55,
     kicker: 'Method 1', title: 'Timing variations',
     subtitle: '',
+    image: 'images/Crab_Lucky_video2.gif',
     body: `Orbiting planets lead to oscillations of the host star about the barycenter of the system. In certain cases where the host star gives us some sort of periodic signal, this gives us a way to detect exoplanets by variations in the measured time period of that signal (due to change in distance over the star's orbit). We will be taking millisecond pulsars as an example. Basically, <ul><li>Millisecond pulsars can be timed with extreme precision.</li><li>If a planet makes the pulsar orbit the barycentre, the light travel distance changes.</li><li>That creates early/late arrival times called timing residuals.</li></ul>`,
     notes: `Start the method section. Say: imagine a lighthouse rotating with incredible regularity. If the lighthouse itself moves back and forth, flashes reach us earlier or later.`
   },
@@ -90,12 +92,14 @@ const slides = [
     section: 'Pulsar Timing', visual: 'pulsar', duration: 70,
     kicker: 'Data reality', title: 'Weeding out data that is irrelevant',
     subtitle: '',
+    image: 'images/residualsWithFluctuations.png',
     body: `If you look at graphs of real residuals you will see a lot of fluctuations for a number of reasons <ul><li>Spin down of pulsars</li><li>So-called 'glitches' in their motion due to various effects</li><li>Parallax and the effect of earth's motion</li></ul> Once we account for such effects, we should be left either with a flat residual when there are no planets, or the effect of the planet(s) orbiting the star.`,
     notes: `Emphasise that detection is model comparison. You fit known effects first. If residual patterns remain, planetary models may explain them.`
   },
   {
     section: 'Pulsar Timing', visual: 'pulsar', duration: 65,
     kicker: 'Fitting logic', title: 'Detecting planets',
+    image: 'images/PlanetResidual.png',
     subtitle: 'At this point we are just left with the task of data fitting.',
     body: `There are a number of different Keplerian planet models that we can try and fit while varying the parameters onto the residual data that is left to us after subtracting the noise. The best fitting model and parameters will tell us what our system most probably looks like.`,
     notes: `Use PSR B1257+12 as the example. Continued monitoring confirmed the planet interpretation because interactions between planets produced predictable departures from a simple Keplerian model.`
@@ -118,19 +122,22 @@ const slides = [
     section: 'Direct Imaging', visual: 'imaging', duration: 70,
     kicker: '', title: 'Difficulties',
     subtitle: '',
+    image: 'images/crowdedStarField.png',
     body: `What we see from the earth is the apparent magnitude of astronomical bodies, and as such what matters is the relative brightness of the planet and the star. $$\\frac{f_p(\\alpha, \\lambda)}{f_*(\\lambda)} = p(\\lambda)\\times (\\frac{R_p}{a})^2 \\times g(\\alpha)$$ <ul><li>$p(\\lambda)$: geometric albedo.</li><li>$\\frac{R_p}{a}$: planet size compared with orbital distance.</li><li>$g(\\alpha)$: phase function depending on current phase.</li></ul><br>The specific form of the phase function depends on the scattering and reflective properties of the planet’s atmosphere or surface. It describes how the reflected light from the planet varies with different phase angles.`,
     notes: `Explain each term qualitatively. Bigger/brighter planets are easier. Planets far from the star are easier to separate angularly but may be dimmer and cooler.`
   },
   {
     section: 'Direct Imaging', visual: 'imaging', duration: 55,
     kicker: '', title: 'Effects to account for',
-    subtitle: 'The host star’s light may leak into the pixels where the planet would have appeared.',
-    body: `<ul><li>Contrast can be 10⁵ to 10¹⁰ against you</li><li>Diffraction can create rings.</li><li>Atmospheric turbulence distorts wavefronts from the ground.</li><li>Optical imperfections in your instrument can create speckles that look like planets.</li></ul>`,
+    image: 'images/directImagingProblems.png',
+    subtitle: 'The host star’s light may leak into the pixels where the planet would have appeared due to various effects.',
+    body: `<ul><li>Flux ratio can be 10⁵ to 10¹⁰ against you</li><li>Diffraction can create rings.</li><li>Atmospheric turbulence distorts wavefronts from the ground.</li><li>Optical imperfections in your instrument can create speckles that look like planets.</li></ul>`,
     notes: `Use the lighthouse analogy from the material. Then say: even after blocking the star, residual speckles remain, and those speckles may look like companions.`
   },
   {
     section: 'Direct Imaging', visual: 'imaging', duration: 70,
     kicker: 'Resolution', title: 'Large apertures help separate close objects',
+    image: 'images/jwst.jpg',
     subtitle: 'Resolving power improves with telescope diameter and shorter wavelength.',
     body: `<div class="equation">$θ_{min} ≈ 1.22 \\frac {λ}{D}$</div><ul><li>θmin is the smallest angular separation resolvable.</li><li>λ is the observing wavelength.</li><li>D is telescope aperture diameter.</li></ul>`,
     notes: `Connect this with Rayleigh criterion. Larger telescopes produce narrower diffraction patterns. But bigger telescopes alone do not solve contrast; they also need wavefront control and post-processing.`
@@ -145,6 +152,7 @@ const slides = [
   {
     section: 'Direct Imaging', visual: 'imaging', duration: 55,
     kicker: 'What it tells us', title: 'Benefits of direct imaging',
+    image: 'images/HR_8799_Orbiting_Exoplanets.gif',
     subtitle: 'Once a planet is isolated, follow-up observations can probe temperature, atmosphere and orbital motion.',
     body: `<ul><li>Imaging over long time scales can trace orbital arcs.</li><li>Spectroscopic analysis can reveal molecules and atmospheric properties.</li><li>Brightness can be used to estimate temperature and mass.</li></ul>`,
     notes: `Direct imaging has a high scientific reward because light from the planet itself can be studied. But it samples a biased population: bright, young, wide planets.`
@@ -160,6 +168,7 @@ const slides = [
     section: 'Microlensing', visual: 'lens', duration: 70,
     kicker: '', title: 'Forms of lensing',
     subtitle: '',
+    image: 'images/GravitationalLensing.jpg',
     body: `There are three main kinds of gravitational lensing. <ul>
     <li>Strong lensing- where the lens is a large mass like a galaxy or galactic cluster and the geometry is favourable. The observer sees two or more separate images of the source. </li>
     <li>Weak lensing- where the lens is a large mass like above but the geometry is not as favourable. The image of the source will be mildly distorted- often getting smeared into a sort of arc centered on the center of the lens. </li>
@@ -170,6 +179,7 @@ const slides = [
   {
     section: 'Microlensing', visual: 'lens', duration: 60,
     kicker: 'Lensing geometry', title: 'Lens bends light due to relativistic effects',
+    image: 'images/einsteinRing.jpg',
     subtitle: 'Perfect alignment would produce an Einstein ring; near alignment produces multiple unresolved images and magnification.',
     body: `<div class="equation">$θ_E \\propto \\sqrt{M} \\times \\sqrt{\\frac{D_{LS}}{D_L\\times D_S}}$</div><ul><li>$θ_E$ can be used to set the angular scale of the lensing event.</li><li>The observed images are usually not resolved.</li><li>We detect the changing brightness instead.</li></ul>`,
     notes: `Keep the equation qualitative. The important idea is that the event has a characteristic scale related to the lens mass and distances. The telescope usually sees only a brighter source, not separated images.`
@@ -185,6 +195,7 @@ const slides = [
     section: 'Microlensing', visual: 'lens', duration: 60,
     kicker: 'Strengths', title: 'Strengths',
     subtitle: 'It is sensitive to faint hosts, distant systems and planets at several AU.',
+    image: 'images/Gravitational_lens.gif',
     body: `<ul>
     <li>Rogue and dark planets can be spotted.</li> 
     <li>Very low mass planets down to the mass of the earth can be spotted as well (since even these low masses can have observable effects on brightness due to the nature of lensing) </li>
@@ -194,6 +205,7 @@ const slides = [
   {
     section: 'Microlensing', visual: 'lens', duration: 55, 
     kicker: 'Limits', title: 'Limitations',
+    image: 'images/exoplanetsWithMicrolensing.png',
     subtitle: 'Once the lens-source alignment passes, the exact event is gone.',
     body: `Basically, an event such as this requires perfect alignment between the source, lens, and the observer and has no reason to recur. For earth-like planets, such events may only last 4-5 hours during which measurements must be taken quickly and without any chance of being able to repeat them. <ul><li>Follow-up must be rapid.</li><li>Orbital parameters are harder to refine than in repeated transits or RV curves since we will only get one set of data.</li></ul>`,
     notes: `Conclude by contrasting microlensing with periodic methods. It can find unique populations, but it is not as convenient for repeated measurements.`
@@ -208,6 +220,7 @@ const slides = [
   {
     section: 'Astrometry', visual: 'astrometry', duration: 70,
     kicker: 'Angular signal', title: 'Measurement difficulties',
+    image: 'images/planetOrbitingBarycenter.gif',
     subtitle: 'For distant systems, the actual magnitude of the wobble is very small.',
     body: `Astrometry was in fact the first method used by astronomers to try and detect planets in the 19th century. However, the tools they possessed at the time were just not sophisticated enough to permit reliable measurements. The angular amplitude of the wobble is roughly given by this equation: <div class="equation">$\\alpha \\approx \\frac{M_p}{M_*} \\times \\frac{a}{d}$</div><ul><li>$\\alpha$: angular size of stellar wobble.</li><li>$\\frac{M_p}{M_*}$: planet-to-star mass ratio.</li><li>$a$: orbital size; $d$: distance to system.</li></ul>`,
     notes: `Explain the scaling. A massive planet pulls the star more. A wider orbit gives a bigger barycentric motion. A nearby system makes the same physical motion subtend a larger angle.`
@@ -215,6 +228,7 @@ const slides = [
   {
     section: 'Astrometry', visual: 'astrometry', duration: 65,
     kicker: 'Separating motions', title: 'Real sky positions include many effects',
+    image: 'images/astrometryDifficulties.png',
     subtitle: 'To find the planet wobble, astronomers must account for proper motion and parallax.',
     body: `<div class="cards"><div class="card"><h3>Proper motion</h3><p>The star drifts across the sky.</p></div><div class="card"><h3>Parallax</h3><p>Earth’s orbit creates an apparent annual shift.</p></div></div>
     <ul><li> A smaller periodic residual should remain after modelling the larger motions if a planet exists in the system.</li>
