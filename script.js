@@ -20,7 +20,7 @@ const slides = [
     kicker: 'Motivation', title: 'Why should we care?',
     image: `images/typesOfExoplanets.png`,
     subtitle: 'Exoplanets test our theories of planet formation, habitability and whether Solar-System-like architectures are common.',
-    body: `<ul><li>They help us test and verify our assumptions about how planets form and migrate.</li><li>They let us compare rocky worlds, gas giants, hot Jupiters, super-Earths and mini-Neptunes.</li><li>They move the question “Are we alone?” from philosophy toward observation.</li></ul>`,
+    body: `<ul><li>They help us test and verify our assumptions about how planets form and migrate.</li><li>They let us compare rocky worlds, gas giants, hot Jupiters, super-Earths and mini-Neptunes.</li><li>They offer prospective candidates for life outside earth.</li></ul>`,
     notes: `Exoplanet science changed astronomy quickly: before the 1990s, there were no confirmed planets around Sun-like stars. Now exoplanets are a normal part of astrophysics. Fermi famously asked whether we're alone in the universe- exoplanets are some of our foremost candidates for extraterrestrial life.`
   },
   {
