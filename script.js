@@ -168,7 +168,7 @@ const slides = [
     section: 'Microlensing', visual: 'lens', duration: 70,
     kicker: '', title: 'Forms of lensing',
     subtitle: '',
-    image: 'images/GravitationalLensing.jpg',
+    image: 'images/GravitationalLensing.png',
     body: `There are three main kinds of gravitational lensing. <ul>
     <li>Strong lensing- where the lens is a large mass like a galaxy or galactic cluster and the geometry is favourable. The observer sees two or more separate images of the source. </li>
     <li>Weak lensing- where the lens is a large mass like above but the geometry is not as favourable. The image of the source will be mildly distorted- often getting smeared into a sort of arc centered on the center of the lens. </li>
